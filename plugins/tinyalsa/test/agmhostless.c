@@ -223,8 +223,7 @@ void play_loopback(unsigned int card, unsigned int p_device, unsigned int c_devi
     char *p_intf_name = play_intf;
     char *c_intf_name = capture_intf;
     unsigned int size;
-    unsigned int bytes_read = 0;
-    unsigned int frames = 0, ret = 0, miid = 0;
+    unsigned int ret = 0, miid = 0;
     struct timespec end;
     struct timespec now;
     struct group_config grp_config;
